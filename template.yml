@@ -1,5 +1,5 @@
 # Example Usage:
-# docker run -v /var/run/docker.sock:/var/run/docker.sock --rm --env PYTHONPATH --env AWS_ACCESS_KEY_ID --env AWS_SECRET_ACCESS_KEY \--env AWS_SESSION_TOKEN -v "$(pwd)":/temp sam local invoke -e ./event.json main
+# docker run -v /var/run/docker.sock:/var/run/docker.sock --rm --env PYTHONPATH --env AWS_ACCESS_KEY_ID --env AWS_SECRET_ACCESS_KEY --env AWS_SESSION_TOKEN -v "$(pwd)":/temp sam local invoke -e ./event.json main
 
 Resources:
   main:
