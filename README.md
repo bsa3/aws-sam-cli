@@ -13,7 +13,8 @@ AWS SAM CLI in Docker Lambda Testing
 
 - install all your dependant libraries for local sandbox testing
 examples: pip install requests==2.19.1 -t ../\<lambdas>/modules
-or pip install -r requirements.txt -t <target dir>
+or pip install -r requirements.txt -t \<target dir>
+
 - PYTHONPATH=\<target dir>
 - docker run -v /var/run/docker.sock:/var/run/docker.sock --rm --env PYTHONPATH --env AWS_ACCESS_KEY_ID --env AWS_SECRET_ACCESS_KEY --env AWS_SESSION_TOKEN -v "$(pwd)":/temp sam local invoke -e ./event.json main
 
